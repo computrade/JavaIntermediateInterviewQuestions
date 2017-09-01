@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-
 /**
  * Java program to find middle element of linked list in one pass.
  * In order to find middle element of linked list we need to find length first
