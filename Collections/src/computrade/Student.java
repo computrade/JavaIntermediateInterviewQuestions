@@ -1,4 +1,4 @@
-package collection;
+package computrade;
 
 public class Student {
 	private String idNo;

@@ -1,4 +1,4 @@
-package collection;
+package computrade;
 import java.util.HashMap;
 import java.util.Hashtable;
 

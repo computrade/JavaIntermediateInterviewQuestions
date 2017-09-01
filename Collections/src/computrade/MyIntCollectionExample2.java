@@ -1,4 +1,4 @@
-package collection;
+package computrade;
 
 public class MyIntCollectionExample2 {
   public static void main(String[] args) {
