@@ -2,7 +2,6 @@ package collection;
 
 import java.util.ArrayList;
 
-//test
 
 public class ArrayListExample {
     public static void main(String[] args) {
