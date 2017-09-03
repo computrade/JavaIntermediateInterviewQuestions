@@ -1,23 +1,30 @@
 package computrade;
 
 public class Student {
-	private String idNo;
+	private Integer studentID;
 	private String name;
-
-	public Student(String i, String n) {
-		idNo = i;
-		name = n;
+	
+	public Student(Integer studentID, String name) {
+		this.studentID = studentID;
+		this.name = name;
 	}
-
-	public Student(String n) {
-		name = n;
+	
+	public Student( String name) {
+		this.name = name;
 	}
-
+	
+	public Integer getStudentID() {
+		return studentID;
+	}
+	public void setStudentID(Integer studentID) {
+		this.studentID = studentID;
+	}
 	public String getName() {
 		return name;
 	}
-
-	public String getIdNo() {
-		return idNo;
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	
 }

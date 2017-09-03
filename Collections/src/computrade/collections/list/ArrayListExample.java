@@ -1,11 +1,14 @@
-package computrade;
+package computrade.collections.list;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
-public class VectorExample {
+import computrade.Student;
+
+
+public class ArrayListExample {
     public static void main(String[] args) {
 	  // Instantiate a collection. 
-	  Vector<Student> students = new Vector<Student>();
+	  ArrayList<Student> students = new ArrayList<Student>();
 
 	  // Create a few Student objects.
 	  Student a = new Student("Herbie");

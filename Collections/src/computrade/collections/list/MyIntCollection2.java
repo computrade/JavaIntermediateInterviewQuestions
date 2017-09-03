@@ -1,4 +1,4 @@
-package computrade;
+package computrade.collections.list;
 
 import java.util.ArrayList;
 

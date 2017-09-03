@@ -1,24 +1,26 @@
-package computrade;
-import java.util.HashMap;
-import java.util.Hashtable;
+package computrade.collections.map;
 
-public class HashMapExample {
+import java.util.TreeMap;
+
+import computrade.Student;
+
+public class TreeMapExample {
     public static void main(String[] args) {
-        // Instantiate a HashMap with String as the key type and Student as
+        // Instantiate a TreeMap with String as the key type and Student as
         // the object type.
-        Hashtable<String, Student> students = new Hashtable<String, Student>();
+        TreeMap<Integer, Student> students = new TreeMap<Integer, Student>();
 
         // Instantiate three Students; the constructor arguments are 
         // used to initialize Student attributes studentIdNo and studentName,
         // respectively, which are both declared to be Strings.
-        Student s1 = new Student("12345-12", "Fred");
-        Student s2 = new Student("98765-00", "Barney");
-        Student s3 = new Student("71024-91", "Wilma");
+        Student s1 = new Student(12345, "Fred");
+        Student s2 = new Student(98765, "Barney");
+        Student s3 = new Student(71024, "Wilma");
 
         // Insert all three Students into the HashMap.
-        students.put(s1.getIdNo(), s1);
-        students.put(s2.getIdNo(), s2);
-        students.put(s3.getIdNo(), s3);
+        students.put(s1.getStudentID(), s1);
+        students.put(s2.getStudentID(), s2);
+        students.put(s3.getStudentID(), s3);
 
         // Retrieve a Student based on a particular (valid) ID.
         String id = "98765-00";
@@ -38,7 +40,7 @@ public class HashMapExample {
 
         // Iterate through the HashMap to process all Students.
         for (Student s : students.values()) {
-            System.out.println("ID:  " + s.getIdNo());
+            System.out.println("ID:  " + s.getStudentID());
             System.out.println("Name:  " + s.getName());
             System.out.println();
         }
