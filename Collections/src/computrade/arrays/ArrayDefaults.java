@@ -2,7 +2,7 @@ package computrade.arrays;
 
 import computrade.Student;
 
-public class ArrayDefaults {
+public class ArrayDefaults{
 
 	private boolean[] booleanArray = new boolean[3]; 
 	private Student[] studentArray = new Student[4];
