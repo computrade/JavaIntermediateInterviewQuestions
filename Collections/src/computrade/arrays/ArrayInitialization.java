@@ -1,11 +1,11 @@
-package computrade.Arrays;
+package computrade.arrays;
 
 import computrade.Student;
 
-public class ArrayDefaults {
+public class ArrayInitialization {
 
-	private boolean[] booleanArray = new boolean[3]; 
-	private Student[] studentArray = new Student[4];
+	private boolean[] booleanArray = {true,false,true}; 
+	private Student[] studentArray = {new Student(1,"Alex"),new Student(2,"Amit"),new Student(3,"Brian")};
 
 	public void printBooleanArray() {
 		// Display the initial value for elements of the instance variable bArray
@@ -16,7 +16,7 @@ public class ArrayDefaults {
 	
 	public void printIntArray() {
 		
-		int[] intArray = new int[5]; 
+		int[] intArray = new int[]{1,3,4,5,6};
 		// Display the initial value for elements of the instance variable intArray
 		for (int i = 0; i < intArray.length; i++) {
 			System.out.println("intArray[" + i + "]:" + intArray[i]);
@@ -25,7 +25,7 @@ public class ArrayDefaults {
 
 	public void printStringArray() {
 		
-		String[] stringArray = new String[4];
+		String[] stringArray = { "Alex","Amit","Brian"};
 		// Display the initial value for elements of the variable stringArray
 		for (int i = 0; i < stringArray.length; i++) {
 			System.out.println("stringArray[" + i + "]:" + stringArray[i]);
@@ -43,7 +43,7 @@ public class ArrayDefaults {
 
 	public static void main(String[] args) {
 
-		ArrayDefaults myArray = new ArrayDefaults();
+		ArrayInitialization myArray = new ArrayInitialization();
 		myArray.printBooleanArray();
 		myArray.printIntArray();
 		myArray.printStringArray();
