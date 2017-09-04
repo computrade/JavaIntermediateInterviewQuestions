@@ -10,7 +10,7 @@ public class ArrayDefaults{
 	public void printBooleanArray() {
 		// Display the initial value for elements of the instance variable bArray
 		for (int i = 0; i < booleanArray.length; i++) {
-			System.out.println("bArray[" + i + "]:" + booleanArray[i]);
+			System.out.println("booleanArray[" + i + "]:" + booleanArray[i]);
 		}
 	}
 	
@@ -39,6 +39,8 @@ public class ArrayDefaults{
 			System.out.println("studentArray[" + i + "]:"  + student);
 			i++;
 		}
+		
+		
 	}
 
 	public static void main(String[] args) {
@@ -48,7 +50,7 @@ public class ArrayDefaults{
 		myArray.printIntArray();
 		myArray.printStringArray();
 		myArray.printStudentArray();
-
+		
 	}
 
 }
