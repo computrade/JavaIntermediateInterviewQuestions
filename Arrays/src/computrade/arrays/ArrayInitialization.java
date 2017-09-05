@@ -4,8 +4,8 @@ import computrade.Student;
 
 public class ArrayInitialization{
 
-	private boolean[] booleanArray = {true,false,true}; 
-	private Student[] studentArray = {new Student(1,"Linda"),new Student(2,"Brian"),new Student(3,"Amit")};
+	private boolean[] booleanArray = new boolean[] {true,false,true}; 
+	private Student[] studentArray = new Student[]{new Student(1,"Linda"),new Student(2,"Brian"),new Student(3,"Amit")};
 
 	public void printBooleanArray() {
 		// Display the initial value for elements of the instance variable bArray
@@ -51,8 +51,8 @@ public class ArrayInitialization{
 		myArray.printStudentArray();
 		
 		//array elements cannot be printed as an object.
-		System.out.println(myArray.booleanArray);
-		System.out.println(myArray.studentArray);
+		//System.out.println(myArray.booleanArray);
+		//System.out.println(myArray.studentArray);
 
 	}
 
