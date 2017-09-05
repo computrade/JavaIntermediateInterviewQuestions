@@ -4,8 +4,8 @@ import computrade.Student;
 
 public class ArrayInitialization{
 
-	private boolean[] booleanArray = new boolean[]{true,false,true}; 
-	private Student[] studentArray = new Student[]{new Student(1,"Linda"),new Student(2,"Amit"),new Student(3,"Brian")};
+	private boolean[] booleanArray = new boolean[] {true,false,true}; 
+	private Student[] studentArray = new Student[]{new Student(1,"Linda"),new Student(2,"Brian"),new Student(3,"Amit")};
 
 	public void printBooleanArray() {
 		// Display the initial value for elements of the instance variable bArray
@@ -26,7 +26,7 @@ public class ArrayInitialization{
 
 	public void printStringArray() {
 		
-		String[] stringArray = { "Linda","Amit",new String("Brian")};
+		String[] stringArray = { "Linda","Brian",new String("Amit")};
 		// Display the initial value for elements of the variable stringArray
 		for (int i = 0; i < stringArray.length; i++) {
 			System.out.println("stringArray[" + i + "]:" + stringArray[i]);
