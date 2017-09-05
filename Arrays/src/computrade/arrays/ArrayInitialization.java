@@ -4,28 +4,29 @@ import computrade.Student;
 
 public class ArrayInitialization{
 
-	private boolean[] booleanArray = {true,false,true}; 
-	private Student[] studentArray = {new Student(1,"Alex"),new Student(2,"Amit"),new Student(3,"Brian")};
+	private boolean[] booleanArray = new boolean[]{true,false,true}; 
+	private Student[] studentArray = new Student[]{new Student(1,"Linda"),new Student(2,"Amit"),new Student(3,"Brian")};
 
 	public void printBooleanArray() {
 		// Display the initial value for elements of the instance variable bArray
 		for (int i = 0; i < booleanArray.length; i++) {
-			System.out.println("bArray[" + i + "]:" + booleanArray[i]);
+			System.out.println("booleanArray[" + i + "]:" + booleanArray[i]);
 		}
 	}
 	
 	public void printIntArray() {
 		
-		int[] intArray = new int[]{1,3,4,5,6};
+		int[] intArray = new int[5];
 		// Display the initial value for elements of the instance variable intArray
 		for (int i = 0; i < intArray.length; i++) {
+			intArray[i]=2*i;
 			System.out.println("intArray[" + i + "]:" + intArray[i]);
 		}
 	}
 
 	public void printStringArray() {
 		
-		String[] stringArray = { "Alex","Amit","Brian"};
+		String[] stringArray = { "Linda","Amit",new String("Brian")};
 		// Display the initial value for elements of the variable stringArray
 		for (int i = 0; i < stringArray.length; i++) {
 			System.out.println("stringArray[" + i + "]:" + stringArray[i]);
@@ -50,8 +51,8 @@ public class ArrayInitialization{
 		myArray.printStudentArray();
 		
 		//array elements cannot be printed as an object.
-		//System.out.println(myArray.booleanArray);
-		//System.out.println(myArray.studentArray);
+		System.out.println(myArray.booleanArray);
+		System.out.println(myArray.studentArray);
 
 	}
 
