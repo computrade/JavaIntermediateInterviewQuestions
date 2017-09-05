@@ -51,8 +51,8 @@ public class ArrayInitialization{
 		myArray.printStudentArray();
 		
 		//array elements cannot be printed as an object.
-		System.out.println(myArray.booleanArray);
-		System.out.println(myArray.studentArray);
+		//System.out.println(myArray.booleanArray);
+		//System.out.println(myArray.studentArray);
 
 	}
 
