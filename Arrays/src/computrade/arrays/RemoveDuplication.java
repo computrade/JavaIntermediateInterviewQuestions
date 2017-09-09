@@ -4,45 +4,37 @@ import java.util.Arrays;
 
 public class RemoveDuplication {
 
-    public static void main(String args[]) {
-
-        int[][] test = new int[][]{
-            {1, 1, 2, 2, 3, 4, 5},
-            {1, 1, 1, 1, 1, 1, 1},
-            {1, 2, 3, 4, 5, 6, 7},
-            {1, 2, 1, 1, 1, 1, 1},};
-
-        for (int[] input : test) {
-            System.out.println("Array with Duplicates       : " + Arrays.toString(input));
-            System.out.println("After removing duplicates   : " + Arrays.toString(removeDuplicates(input)));
-        }
-    }
-
-    /*
-     * Method to remove duplicates from array in Java, without using
-     * Collection classes e.g. Set or ArrayList. Algorithm for this
-     * method is simple, it first sort the array and then compare adjacent
-     * objects, leaving out duplicates, which is already in the result.
-     */
-    public static int[] removeDuplicates(int[] numbersWithDuplicates) {
-
-        // Sorting array to bring duplicates together      
-        Arrays.sort(numbersWithDuplicates);     
-      
-        int[] result = new int[numbersWithDuplicates.length];
-        int previous = numbersWithDuplicates[0];
-        result[0] = previous;
-
-        for (int i = 1; i < numbersWithDuplicates.length; i++) {
-            int ch = numbersWithDuplicates[i];
-
-            if (previous != ch) {
-                result[i] = ch;
+    public int[] removeDuplicates(int[] numbersWithDuplicates){
+    	
+    	System.out.println("Array with Duplicates: " + Arrays.toString(numbersWithDuplicates));
+        int end = numbersWithDuplicates.length;
+        boolean resultBoolean[] = new boolean[numbersWithDuplicates.length];
+       
+        for (int i = 0; i < end; i++) {
+            for (int j = i + 1; j < end; j++) {
+                if (numbersWithDuplicates[i] == numbersWithDuplicates[j]) {                  
+                    resultBoolean[j]=true;
+                }
             }
-            previous = ch;
         }
-        return result;
-
+        
+        int resultcount=0;
+        for (boolean duplicate: resultBoolean){
+        	if(!duplicate) resultcount++;  
+        }
+        
+        //create the result array with the correct size only once.
+        int[] resultWIthoutDuplicate = new int[resultcount];
+        for (int i = 0,j=0; i < numbersWithDuplicates.length; i++) {
+        	if(!resultBoolean[i]){
+        		resultWIthoutDuplicate[j]=numbersWithDuplicates[i];
+        		j++;
+        	}  	
+        }
+        
+        System.out.println("Array without Duplicates: " + Arrays.toString(resultWIthoutDuplicate));
+        return resultWIthoutDuplicate;
     }
+
 }
 
