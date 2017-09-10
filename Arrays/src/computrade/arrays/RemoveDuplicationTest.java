@@ -9,8 +9,8 @@ public class RemoveDuplicationTest {
 	public void testRemoveDuplicationWithSort(){
 		RemoveDuplicationWithSort removeDuplicationWithSort = new RemoveDuplicationWithSort();
 		
-		int[] numbersWithDuplicates = new int[]{1, 1, 2, 2, 3, 4, 5};
-		int[] expected =  new int[]{1, 2, 3, 4, 5}; 
+		int[] numbersWithDuplicates = new int[]{5, 2, 2, 3, 5};
+		int[] expected =  new int[]{2, 3, 5}; 
 		Assert.assertArrayEquals(expected, removeDuplicationWithSort.removeDuplicates(numbersWithDuplicates));
 		
 		numbersWithDuplicates= new int[]{1, 1, 1, 1, 1, 1, 1};

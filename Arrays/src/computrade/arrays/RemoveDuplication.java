@@ -18,6 +18,7 @@ public class RemoveDuplication {
             }
         }
         
+        //count the results.
         int resultcount=0;
         for (boolean duplicate: resultBoolean){
         	if(!duplicate) resultcount++;  
