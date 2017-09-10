@@ -19,14 +19,14 @@ public class RemoveDuplication {
         }
         
         //count the results.
-        int resultcount=0;
+        int resultCounter=0;
         for (boolean duplicate: resultBoolean){
-        	if(!duplicate) resultcount++;  
+        	if(!duplicate) resultCounter++;  
         }
         
         //create the result array with the correct size only once.
-        int[] resultWIthoutDuplicate = new int[resultcount];
-        for (int i = 0,j=0; i < numbersWithDuplicates.length; i++) {
+        int[] resultWIthoutDuplicate = new int[resultCounter];
+        for (int i=0,j=0; i < numbersWithDuplicates.length; i++) {
         	if(!resultBoolean[i]){
         		resultWIthoutDuplicate[j]=numbersWithDuplicates[i];
         		j++;

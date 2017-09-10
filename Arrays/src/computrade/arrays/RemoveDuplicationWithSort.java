@@ -23,7 +23,6 @@ public class RemoveDuplicationWithSort {
 
         for (int i = 1; i < numbersWithDuplicates.length; i++) {
             int nextInt = numbersWithDuplicates[i];
-
             if (previous != nextInt) {
                 result[i] = nextInt;
                 resultcounter++;
@@ -31,11 +30,10 @@ public class RemoveDuplicationWithSort {
             previous = nextInt;
         }
         
-        
         //create result array only once.
         int[] resultWIthoutDuplicate = new int[resultcounter];
         
-        for (int i = 0,j=0; i < result.length; i++) {
+        for (int i=0,j=0; i<result.length; i++) {
         	if(result[i]!=0){
         		resultWIthoutDuplicate[j++]=result[i];
         	}
