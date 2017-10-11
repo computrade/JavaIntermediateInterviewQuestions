@@ -10,20 +10,16 @@ public class FinalizeOrFinally {
 
 	public static void main(String... args) throws InterruptedException {
 
-		FinalizeOrFinally finalizeOrFinally = new FinalizeOrFinally();
-		finalizeOrFinally.writeFile();
-
-		finalizeOrFinally = null;
-
+		new FinalizeOrFinally().writeFile();
 		System.gc();
 		Thread.sleep(1000);
 
 	}
 
 	public void writeFile() {
-
-		try {
-			System.out.println("Entering" + " try statement");
+		
+		try{
+			System.out.println("Entering try statement");
 			out = new PrintWriter(new FileWriter("OutFile.txt"));
 
 		} catch (IOException e) {
