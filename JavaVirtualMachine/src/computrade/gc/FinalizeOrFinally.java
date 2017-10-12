@@ -30,6 +30,7 @@ public class FinalizeOrFinally {
 			if (out != null) {
 				System.out.println("finally block: Closing PrintWriter");
 				out.close();
+				out=null;
 			} else {
 				System.out.println("finally block: PrintWriter not open");
 			}
@@ -40,6 +41,12 @@ public class FinalizeOrFinally {
 	public void finalize() {
 
 		// TODO implement your own finalize block.
+		if (out != null) {
+			System.out.println("finalize block: Closing PrintWriter");
+			out.close();
+		} else {
+			System.out.println("finalize block: PrintWriter not open");
+		}
 	
 	}
 
