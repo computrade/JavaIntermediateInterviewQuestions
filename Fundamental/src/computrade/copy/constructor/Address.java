@@ -1,31 +1,40 @@
-package computrade.clonning;
+package computrade.copy.constructor;
 
-public class Adress{
+public class Address implements Cloneable {
 
 	private int houseNumber;
 	private String street;
 	private String city;
 	private String state;
 
-	public Adress(int houseNumber, String street, String city, String state) {
+	public Address(int houseNumber, String street, String city, String state) {
 		this.houseNumber = houseNumber;
 		this.street = street;
 		this.city = city;
 		this.state = state;
 	}
 	
-	public Adress(Adress inputAdress) {
+	public Address(Address inputAdress) {
 		
 		this(inputAdress.getHouseNumber(),inputAdress.getStreet(),
 			 inputAdress.getCity(),inputAdress.getState());
 		
 	}
 	
-	public static Adress getIntance(Adress inputAdress) {
+	public static Address getIntance(Address inputAdress) {
 		
-		return new Adress(inputAdress.getHouseNumber(),inputAdress.getStreet(),
+		return new Address(inputAdress.getHouseNumber(),inputAdress.getStreet(),
 				          inputAdress.getCity(),inputAdress.getState());
 		
+	}
+
+	public Address clone() {
+		try {
+			return (Address) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			throw new RuntimeException();
+		}
 	}
 
 	public int getHouseNumber() {
@@ -87,7 +96,7 @@ public class Adress{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Adress other = (Adress) obj;
+		Address other = (Address) obj;
 		if (city == null) {
 			if (other.city != null)
 				return false;

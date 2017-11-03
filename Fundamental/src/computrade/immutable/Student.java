@@ -4,9 +4,9 @@ public final class Student {
 	
 	private final int id;
 	private final String name;
-	private final Adress adress;
+	private final Address adress;
 	
-	public Student(int id, String name, Adress adress) {
+	public Student(int id, String name, Address adress) {
 		this.id = id;
 		this.name = name;
 		this.adress = adress;
@@ -18,7 +18,7 @@ public final class Student {
 	public String getName() {
 		return name;
 	}
-	public Adress getAdress() {
+	public Address getAdress() {
 		return adress;
 		
 	}

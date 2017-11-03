@@ -1,13 +1,13 @@
 package computrade.immutable;
 
-public class Adress {
+public class Address {
 	
     private int houseNumber;
     private String street;
     private String city;
     private String state;
     
-	public Adress(int houseNumber, String street, String city, String state) {
+	public Address(int houseNumber, String street, String city, String state) {
 		this.houseNumber = houseNumber;
 		this.street = street;
 		this.city = city;

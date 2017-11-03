@@ -10,12 +10,12 @@ public class Main {
 	
 	public void run(){
 		
-		Adress immutableAdress = new Adress(16, "Pine st." , "Los Angeles", "California");
+		Address immutableAdress = new Address(16, "Pine st." , "Los Angeles", "California");
 		Student immutableStudent = new Student(123,"Clinton",immutableAdress);
 		
 		System.out.println("This is my immutable student:\n" + immutableStudent);
 		
-		Adress adress = immutableStudent.getAdress();
+		Address adress = immutableStudent.getAdress();
 		adress.setStreet("Apple st.");
 		
 		System.out.println("This is my immutable student ?:\n" + immutableStudent);
