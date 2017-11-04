@@ -18,11 +18,7 @@ public class Main {
 		adress.setStreet("Apple st.");
 		
 		System.out.println("This is my immutable student ?:\n" + immutableStudent);
-		
-		Student cloneableStudent = immutableStudent.clone();
-		
-		System.out.println("Are cloned objects are equals? " + immutableStudent.equals(cloneableStudent));
-		System.out.println("Are cloned objects are the same? " + (immutableStudent==cloneableStudent));
+	
 		
 	}
 

@@ -4,12 +4,12 @@ public final class Student {
 	
 	private final int id;
 	private final String name;
-	private final Address adress;
+	private final Address address;
 	
 	public Student(int id, String name, Address adress) {
 		this.id = id;
 		this.name = name;
-		this.adress = adress;
+		this.address = adress;
 	}
 	
 	public int getId() {
@@ -19,14 +19,14 @@ public final class Student {
 		return name;
 	}
 	public Address getAdress() {
-		return adress;
+		return address;
 		
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Student [id=").append(id).append(", name=").append(name).append(", adress=").append(adress)
+		builder.append("Student [id=").append(id).append(", name=").append(name).append(", adress=").append(address)
 				.append("]");
 		return builder.toString();
 	}

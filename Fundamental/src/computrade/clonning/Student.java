@@ -1,15 +1,15 @@
 package computrade.clonning;
 
-public final class Student{
+public final class Student implements Cloneable{
 	
 	private final int id;
 	private final String name;
-	private final Address adress;
+	private final Address address;
 	
 	public Student(int id, String name, Address adress) {
 		this.id = id;
 		this.name = name;
-		this.adress = adress;
+		this.address = adress;
 	}
 	
 	public int getId() {
@@ -19,14 +19,24 @@ public final class Student{
 		return name;
 	}
 	public Address getAdress() {
-		return new Address(this.adress);
+		return new Address(this.address);
 		//return Adress.getIntance(this.adress);
 	}
+	
+	public Student clone() {
+		try {
+			return (Student) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			throw new RuntimeException();
+		}
+	}
+
 	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Student [id=").append(id).append(", name=").append(name).append(", adress=").append(adress)
+		builder.append("Student [id=").append(id).append(", name=").append(name).append(", adress=").append(address)
 				.append("]");
 		return builder.toString();
 	}
@@ -35,7 +45,7 @@ public final class Student{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((adress == null) ? 0 : adress.hashCode());
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
 		result = prime * result + id;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
@@ -50,10 +60,10 @@ public final class Student{
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		if (adress == null) {
-			if (other.adress != null)
+		if (address == null) {
+			if (other.address != null)
 				return false;
-		} else if (!adress.equals(other.adress))
+		} else if (!address.equals(other.address))
 			return false;
 		if (id != other.id)
 			return false;

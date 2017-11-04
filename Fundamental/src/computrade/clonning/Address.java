@@ -1,6 +1,6 @@
 package computrade.clonning;
 
-public class Address{
+public class Address implements Cloneable{
 
 	private int houseNumber;
 	private String street;
@@ -21,13 +21,15 @@ public class Address{
 		
 	}
 	
-	public static Address getIntance(Address inputAdress) {
-		
-		return new Address(inputAdress.getHouseNumber(),inputAdress.getStreet(),
-				          inputAdress.getCity(),inputAdress.getState());
-		
+	public Address clone() {
+		try {
+			return (Address) super.clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+			throw new RuntimeException();
+		}
 	}
-
+	
 	public int getHouseNumber() {
 		return houseNumber;
 	}

@@ -15,9 +15,9 @@ public class Main {
 		
 		System.out.println("This is my immutable student:\n" + immutableStudent);
 		
-		//address = immutableStudent.getAdress();
-		//address.setStreet("Apple st.");
-		//System.out.println("This is my immutable student ?:\n" + immutableStudent);
+		address = immutableStudent.getAdress();
+		address.setStreet("Apple st.");
+		System.out.println("This is my immutable student ?:\n" + immutableStudent);
 		
 	}
 

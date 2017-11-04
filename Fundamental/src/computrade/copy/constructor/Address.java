@@ -1,6 +1,6 @@
 package computrade.copy.constructor;
 
-public class Address implements Cloneable {
+public class Address{
 
 	private int houseNumber;
 	private String street;
@@ -26,15 +26,6 @@ public class Address implements Cloneable {
 		return new Address(inputAdress.getHouseNumber(),inputAdress.getStreet(),
 				          inputAdress.getCity(),inputAdress.getState());
 		
-	}
-
-	public Address clone() {
-		try {
-			return (Address) super.clone();
-		} catch (CloneNotSupportedException e) {
-			e.printStackTrace();
-			throw new RuntimeException();
-		}
 	}
 
 	public int getHouseNumber() {
