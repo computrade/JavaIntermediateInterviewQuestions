@@ -19,13 +19,18 @@ public final class Student{
 		return name;
 	}
 	public Address getAdress() {
-		return new Address(address.getHouseNumber(),address.getStreet(),address.getCity(),address.getState());
+		
+		return this.address;
+		//return new Address(address.getHouseNumber(),address.getStreet(),address.getCity(),address.getState());
+		//return new Address(address);
+		//return Address.getInstance(address);
+		
 	}
 	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Student [id=").append(id).append(", name=").append(name).append(", adress=").append(address)
+		builder.append("Student [id=").append(id).append(", name=").append(name).append(",\n adress=").append(address)
 				.append("]");
 		return builder.toString();
 	}

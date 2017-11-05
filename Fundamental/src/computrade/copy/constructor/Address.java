@@ -21,7 +21,7 @@ public class Address{
 		
 	}
 	
-	public static Address getIntance(Address inputAdress) {
+	public static Address getInstance(Address inputAdress) {
 		
 		return new Address(inputAdress.getHouseNumber(),inputAdress.getStreet(),
 				          inputAdress.getCity(),inputAdress.getState());

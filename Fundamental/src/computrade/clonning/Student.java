@@ -1,10 +1,10 @@
 package computrade.clonning;
 
-public final class Student implements Cloneable{
+public class Student /*implements Cloneable*/{
 	
-	private final int id;
-	private final String name;
-	private final Address address;
+	private int id;
+	private String name;
+	private Address address;
 	
 	public Student(int id, String name, Address adress) {
 		this.id = id;
@@ -19,19 +19,21 @@ public final class Student implements Cloneable{
 		return name;
 	}
 	public Address getAdress() {
-		return new Address(this.address);
-		//return Adress.getIntance(this.adress);
+		return this.address;
 	}
+	
 	
 	public Student clone() {
 		try {
-			return (Student) super.clone();
+			Student cloneStudent =  (Student) super.clone();
+			//cloneStudent.address = this.address.clone();
+			return cloneStudent;	       
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 			throw new RuntimeException();
 		}
 	}
-
+	
 	
 	@Override
 	public String toString() {
