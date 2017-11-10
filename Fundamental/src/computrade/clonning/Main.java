@@ -10,8 +10,8 @@ public class Main {
 	
 	public void run(){
 		
-		Address adress = new Address(16, "Pine st." , "Los Angeles", "California");
-		Student student = new Student(123,"Clinton",adress);
+		Address address = new Address(16, "Pine st." , "Los Angeles", "California");
+		Student student = new Student(123,"Clinton",address);
 		System.out.println("This is my student:\n" + student);
 		
 		//Student cloneableStudent = student.clone();
