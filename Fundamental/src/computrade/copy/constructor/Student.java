@@ -18,7 +18,7 @@ public final class Student{
 	public String getName() {
 		return name;
 	}
-	public Address getAdress() {
+	public Address getAddress() {
 		
 		return this.address;
 		//return new Address(address.getHouseNumber(),address.getStreet(),address.getCity(),address.getState());

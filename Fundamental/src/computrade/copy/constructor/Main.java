@@ -13,7 +13,7 @@ public class Main {
 		Student immutableStudent = new Student(123,"Clinton",immutableAdress);
 		System.out.println("***This is my immutable student:" + immutableStudent);
 		
-		Address adress = immutableStudent.getAdress();
+		Address adress = immutableStudent.getAddress();
 		adress.setStreet("Apple st.");
 		
 		System.out.println("***This is my immutable student?:" + immutableStudent);
