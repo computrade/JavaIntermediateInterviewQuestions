@@ -18,11 +18,11 @@ public class Student /*implements Cloneable*/{
 	public String getName() {
 		return name;
 	}
-	public Address getAdress() {
+	public Address getAddress() {
 		return this.address;
 	}
 	
-	
+	/*
 	public Student clone() {
 		try {
 			Student cloneStudent =  (Student) super.clone();
@@ -33,7 +33,7 @@ public class Student /*implements Cloneable*/{
 			throw new RuntimeException();
 		}
 	}
-	
+	*/
 	
 	@Override
 	public String toString() {
