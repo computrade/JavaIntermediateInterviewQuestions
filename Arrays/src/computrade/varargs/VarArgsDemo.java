@@ -12,13 +12,16 @@ public class VarArgsDemo {
 		//varArgsDemo.average(1,3,5,7);
 		//varArgsDemo.average(1,3,5,7,9);
 		
-		
+		/*
 		String result = MessageFormat.format(
-		  "{1} at {0,time} on {0,date}.", new Date(), "You are watching this lesson ");
-		System.out.println(result);
+		 "You are watching {0} lesson on the {1} time at {2,time} on {2,date}.", 
+		 "VarArgs",1,new Date());
 		
+		System.out.println(result);
+		*/
 
 	}
+	
 	
 	public void average(int num1, int num2){
 		System.out.println("Avg of 2 numbers is:" + (num1+num2)/2);
@@ -30,7 +33,16 @@ public class VarArgsDemo {
 	
 	/*
 	public void average(int... numbers){
-		
+		int sum=0;
+		for(int num:numbers){
+			sum+=num;
+		}
+		System.out.println("Avg of varargs numbers is:" + (sum)/numbers.length);
+	}
+	
+	*/
+	/*
+	public void average(Object input, int... numbers){
 		int sum=0;
 		for(int num:numbers){
 			sum+=num;
