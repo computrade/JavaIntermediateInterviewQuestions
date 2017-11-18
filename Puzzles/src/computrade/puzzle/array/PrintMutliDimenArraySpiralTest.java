@@ -48,7 +48,7 @@ public class PrintMutliDimenArraySpiralTest {
 	public void test5on5(){
 		
 		//example 3
-        int input3[][]  = new int[][]{
+        int[][] input3  = new int[][]{
                 {1, 2, 3, 4, 5},
                 {16, 17, 18, 19, 6},
                 {15, 24, 25, 20, 7},
