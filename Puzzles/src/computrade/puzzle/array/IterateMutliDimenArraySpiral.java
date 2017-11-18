@@ -10,26 +10,22 @@ public class IterateMutliDimenArraySpiral {
 	 */
 
 	enum Direction {
-		DEFAULT, LEFT_RIGHT, TOP_DOWN, RIGHT_LEFT, DOWN_TOP;
+		LEFT_RIGHT, TOP_DOWN, RIGHT_LEFT, DOWN_TOP;
 	}
 	
 	public static int[] getSpiralArray(int[][] matrix) {
 
 		Direction direction = Direction.LEFT_RIGHT;
 
-		int oIndex = 0;
 		int sizeOfOut = matrix.length * matrix[0].length;
 		int output[] = new int[sizeOfOut];
+		int oIndex = 0;
 
 		int[] rowRange = { 0, matrix.length - 1 };
 		int[] colRange = { 0, matrix[0].length - 1 };
 
 		while (true) {
-			if (rowRange[1] < rowRange[0])
-				break;
-			if (colRange[1] < colRange[0])
-				break;
-
+	
 			switch (direction) {
 			case LEFT_RIGHT:
 				for (int x = rowRange[0], y = colRange[0]; y <= colRange[1]; y++)
@@ -58,10 +54,12 @@ public class IterateMutliDimenArraySpiral {
 				colRange[0]++;
 				direction = Direction.LEFT_RIGHT;
 				break;
-			case DEFAULT:
-				throw new RuntimeException("invalid direction");
-
 			}
+			
+			if (rowRange[1] < rowRange[0])
+				break;
+			if (colRange[1] < colRange[0])
+				break;
 		}
 
 		return output;
