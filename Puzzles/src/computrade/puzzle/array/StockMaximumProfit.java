@@ -1,4 +1,4 @@
-package computrade.puzzle;
+package computrade.puzzle.array;
 
 /* 
  * I have an array stockPricesYesterday where:

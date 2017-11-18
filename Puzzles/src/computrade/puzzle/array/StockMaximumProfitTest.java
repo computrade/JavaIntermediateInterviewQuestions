@@ -1,4 +1,4 @@
-package computrade.puzzle;
+package computrade.puzzle.array;
 
 import static org.junit.Assert.assertEquals;
 
