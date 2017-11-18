@@ -1,27 +1,17 @@
 package computrade.puzzle.array;
 
-public class PrintMutliDimenArraySpiral {
+public class IterateMutliDimenArraySpiral {
 
 	/**
-	 * Write a logic to get the elements of 2D matrix in a spiral way.
-	 * for example if int[][] matrix = {{1,2,3,4},{5.6,7,8},{9, 10, 11,12}}; 
-	 * The output should be 1 2 3 4 8 12 11 10 9 5 6 7
+	 * This class implements the logic to get the elements of 2D matrix in a spiral way.
+	 * for example:
+	 * 	 if int[][] matrix = {{1,2,3,4},{5.6,7,8},{9, 10, 11,12}}; 
+	 * The output should be {1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7}
 	 */
 
 	enum Direction {
 		DEFAULT, LEFT_RIGHT, TOP_DOWN, RIGHT_LEFT, DOWN_TOP;
 	}
-
-	/*
-	 * Imagine a big block of soft material (rectangular). You will take slices
-	 * from this material where thickness of slice is 1 row or 1 column Take
-	 * Cut off the top part from LEFT to RIGHT ( First SLIIIIICE!).
-	 * Cut slice on the right side from TOP to BOTTOM ( SLIIIIICE!) Next
-	 * Cut slice from BOTTOM from RIGHT TO LEFT ( SLIIIIICE!) Next cut slice
-	 * from left side from BOTTOM to top ( SLIIIIICE!)
-	 * 
-	 *  Repeat till there is NOTHING left
-	 */
 	
 	public static int[] getSpiralArray(int[][] matrix) {
 
