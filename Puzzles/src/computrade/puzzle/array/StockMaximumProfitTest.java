@@ -55,12 +55,9 @@ public class StockMaximumProfitTest {
 		
 		double stockPrices[] = { 100, 100.2, 99, 98, 97.1, 99, 96,
 				101.2, 102.3, 104.1, 103.2 };
-		
-		
 		assertEquals(8.1,StockMaximumProfit.findBestProfit(stockPrices),0.001);
 	
 	}
-	
 	
 	@Test
 	public void testStockMaximumProfitInteger() {
