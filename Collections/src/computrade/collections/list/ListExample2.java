@@ -55,7 +55,6 @@ public class ListExample2 {
         names.add("Donald");
         names.add("Brian");
         names.add("Steve");
-        // Print the list details
      
         // Print the list details
         System.out.printf("After adding 3 elements: Size = %d, Elements = %s%n",
