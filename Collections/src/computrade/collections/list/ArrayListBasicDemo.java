@@ -22,12 +22,12 @@ public class ArrayListBasicDemo {
 	  students.add(b);
 	  students.add(c);
 	  
-	  students.add(null); //possible to add null values.
+	  //students.add(null); //possible to add null values.
 	  
 	  //it is possible to add the same objects again
-	  students.add(a);
-	  students.add(b);
-	  students.add(c);
+	  //students.add(a);
+	  //students.add(b);
+	  //students.add(c);
 	  
 	  // use toString method of Student for printing.
 	  System.out.println(students); 
@@ -46,10 +46,10 @@ public class ArrayListBasicDemo {
 	  }
 	  
 	  //TODO #1
-	  //iterate using for with get(index)
+	  //iterate using for with arraylist.get(index)
 	  
 	  //TODO #2 
-	  //iterate using while with get(index)
+	  //iterate using while with arraylist.get(index)
 	  
 	  //TODO #3 - advance.
 	  //iterate using collection stream() utils. 
