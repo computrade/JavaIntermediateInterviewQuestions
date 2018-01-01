@@ -7,7 +7,7 @@ import java.util.List;
 import computrade.Student;
 
 
-public class ArrayListIterateExample {
+public class ArrayListBasicExample {
     public static void main(String[] args) {
 	  // Instantiate a collection. 
 	  List<Student> students = new ArrayList<Student>();
@@ -21,6 +21,7 @@ public class ArrayListIterateExample {
 	  students.add(a);
 	  students.add(b);
 	  students.add(c);
+	  
 	  students.add(null); //possible to add null values.
 	  
 	  //it is possible to add the same objects again

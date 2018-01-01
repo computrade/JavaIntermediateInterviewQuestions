@@ -3,7 +3,7 @@ package computrade.collections.list;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListExampleUsingIndex {
+public class ListExampleUsingPosition {
 	
 	public static void main(String[] args) {
         // Create a list of strings
