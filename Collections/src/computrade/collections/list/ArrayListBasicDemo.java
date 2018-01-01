@@ -7,7 +7,7 @@ import java.util.List;
 import computrade.Student;
 
 
-public class ArrayListBasicExample {
+public class ArrayListBasicDemo {
     public static void main(String[] args) {
 	  // Instantiate a collection. 
 	  List<Student> students = new ArrayList<Student>();

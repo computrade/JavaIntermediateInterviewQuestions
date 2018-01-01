@@ -4,7 +4,7 @@ import java.util.Vector;
 
 import computrade.Student;
 
-public class VectorExample {
+public class VectorDemo {
     public static void main(String[] args) {
 	  // Instantiate a collection. 
 	  Vector<Student> students = new Vector<Student>();
