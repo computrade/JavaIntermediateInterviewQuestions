@@ -13,10 +13,10 @@ public class ArrayListPositionDemo {
 		System.out.printf("After creation: Size = %d,Elements = %s%n", names.size(), names);
 
 		// Add some names to the list
-		//names.add("Alice");
-		//names.add("Bob");
-		//names.add("Charly");
-		//names.add("Diana");
+		//names.add("Alice"); // index 0
+		//names.add("Bob");   // index 1
+		//names.add("Charly");// index 2
+		//names.add("Diana"); // index 3
 
 		// Print the list details
 		//System.out.printf("After adding 4 elements: Size = %d, ,Elements = %s%n", names.size(), names);
@@ -43,14 +43,13 @@ public class ArrayListPositionDemo {
 		//names.add(3, "Diana");
 
 		// I can add elements one by one as much as I want.
-		/*
-		for (int i = 0; i < 25; i++) {
-			names.add(i, "element" + i);
-		}
-		*/
+		//for (int i = 0; i < 25; i++) {
+		//	names.add(i, "element" + i);
+		//}
+		
 
 		// Print the list details
-		//System.out.printf("After adding 20 elements elements: Size = %d, Elements = %s%n", names.size(), names);
+		//System.out.printf("After adding 25 elements elements: Size = %d, Elements = %s%n", names.size(), names);
 
 	}
 
