@@ -23,8 +23,6 @@ public class ArrayListBasicDemo {
 	  students.add(c);
 	  System.out.println(students); 
 	  
-	  
-	  
 	  //students.add(null); //possible to add null values.
 	  
 	  //it is possible to add the same objects again
