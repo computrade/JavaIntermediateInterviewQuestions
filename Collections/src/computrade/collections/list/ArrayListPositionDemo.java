@@ -13,13 +13,13 @@ public class ArrayListPositionDemo {
 		System.out.printf("After creation: Size = %d,Elements = %s%n", names.size(), names);
 
 		// Add some names to the list
-		//names.add("Alice"); // index 0
+	    //names.add("Alice"); // index 0
 		//names.add("Bob");   // index 1
 		//names.add("Charly");// index 2
 		//names.add("Diana"); // index 3
 
 		// Print the list details
-		//System.out.printf("After adding 4 elements: Size = %d, ,Elements = %s%n", names.size(), names);
+		//System.out.printf("After adding 4 elements: Size = %d, Elements = %s%n", names.size(), names);
 
 		// Remove the second element (Bob) from the list - all elements were shift to left.
 		//names.remove(1);
@@ -46,8 +46,6 @@ public class ArrayListPositionDemo {
 		//for (int i = 0; i < 25; i++) {
 		//	names.add(i, "element" + i);
 		//}
-		
-
 		// Print the list details
 		//System.out.printf("After adding 25 elements elements: Size = %d, Elements = %s%n", names.size(), names);
 
