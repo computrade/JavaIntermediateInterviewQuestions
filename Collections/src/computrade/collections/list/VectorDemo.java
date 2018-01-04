@@ -5,6 +5,7 @@ import java.util.Vector;
 import computrade.Student;
 
 public class VectorDemo {
+	
     public static void main(String[] args) {
 	  // Instantiate a collection. 
 	  Vector<Student> students = new Vector<Student>();
@@ -16,12 +17,18 @@ public class VectorDemo {
 
 	  // Store references to all three Students in the collection.
 	  students.add(a);
-	  students.add(b);
+	  students.add(1,b);
+	  students.remove(1);
 	  students.add(c);
+	  
+	  System.out.println("The vector size is: " + students.size());
 
 	  // iterate through and print them one by one,
 	  for (Student s : students) {
 	    System.out.println(s.getName()); 
 	  }
+	  
+	  students.clear();
+	  
     }
 }
