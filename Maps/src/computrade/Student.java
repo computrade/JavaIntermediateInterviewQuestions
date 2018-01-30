@@ -13,13 +13,6 @@ public class Student {
 		this.name = name;
 	}
 	
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Student [studentID=").append(studentID).append(", name=").append(name).append("]");
-		return builder.toString();
-	}
-
 	public Integer getStudentID() {
 		return studentID;
 	}
@@ -31,6 +24,13 @@ public class Student {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Student [studentID=").append(studentID).append(", name=").append(name).append("]");
+		return builder.toString();
 	}
 
 	

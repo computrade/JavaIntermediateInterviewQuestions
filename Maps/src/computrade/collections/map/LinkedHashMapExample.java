@@ -1,16 +1,17 @@
 package computrade.collections.map;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 import computrade.Student;
 
-public class TreeMapExample {
+public class LinkedHashMapExample {
+	
     public static void main(String[] args) {
       
             // Instantiate a HashMap with Integer as the key type and Student as
             // the object type.
-        	Map<Integer, Student> students = new TreeMap<Integer, Student>();
+         	Map<Integer, Student> students = new LinkedHashMap<Integer, Student>();
             // Instantiate three Students; the constructor arguments are 
             // used to initialize Student attributes studentId and studentName
             Student s1 = new Student(12345, "Fred");
@@ -28,7 +29,7 @@ public class TreeMapExample {
                 System.out.println("ID: " + key );
             }
             
-            System.out.println("***Note: The map is sorted according to the natural ordering of its keys!");
+            System.out.println("***Note: The map is keeping the order in which keys were inserted into the map (insertion-order).");
          
             System.out.println("\nIterate through the HashMap to process all Values (Students):");
             for (Student s : students.values()) {
