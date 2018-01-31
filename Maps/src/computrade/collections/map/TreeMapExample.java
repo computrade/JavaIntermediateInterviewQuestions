@@ -11,7 +11,7 @@ public class TreeMapExample {
             // Instantiate a HashMap with Integer as the key type and Student as
             // the value type.
     		TreeMap<Integer, Student> students = new TreeMap<Integer, Student>();
-            // Instantiate three Students; the constructor arguments are 
+            // Instantiate four Students; the constructor arguments are 
             // used to initialize Student attributes studentId and studentName
             Student s1 = new Student(12, "Fred");
             Student s2 = new Student(98, "Barney");
