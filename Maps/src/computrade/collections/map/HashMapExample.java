@@ -7,8 +7,7 @@ import computrade.Student;
 public class HashMapExample {
     public static void main(String[] args) {
     	
-        // Instantiate a HashMap with Integer as the key type and Student as
-        // the value type.
+        // Instantiate a HashMap with Integer as the key type and Student as the value type.
         Map<Integer, Student> students = new HashMap<Integer, Student>();
         // Instantiate three Students; the constructor arguments are 
         // used to initialize Student attributes studentId and studentName
