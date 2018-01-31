@@ -8,13 +8,13 @@ public class HashMapExample {
     public static void main(String[] args) {
     	
         // Instantiate a HashMap with Integer as the key type and Student as
-        // the object type.
+        // the value type.
         Map<Integer, Student> students = new HashMap<Integer, Student>();
         // Instantiate three Students; the constructor arguments are 
         // used to initialize Student attributes studentId and studentName
-        Student s1 = new Student(12345, "Fred");
-        Student s2 = new Student(98765, "Barney");
-        Student s3 = new Student(71024, "Wilma");
+        Student s1 = new Student(12, "Fred");
+        Student s2 = new Student(98, "Barney");
+        Student s3 = new Student(71, "Wilma");
 
         // Insert all three Students into the HashMap.
         students.put(s1.getStudentID(), s1);
@@ -22,7 +22,7 @@ public class HashMapExample {
         students.put(s3.getStudentID(), s3);
 
         // Retrieve a Student based on a particular (valid) ID.
-        int id = 98765;
+        int id = 98;
         System.out.println("Let's try to retrieve a Student with ID = " + id);
         Student student = students.get(id);
         if (student != null){
@@ -33,7 +33,7 @@ public class HashMapExample {
        
 
         // Try an invalid ID.
-        id = 135;
+        id = 13;
         System.out.println("\nLet's try to retrieve a Student with ID = " + id);
         student = students.get(id);
         if (student != null){

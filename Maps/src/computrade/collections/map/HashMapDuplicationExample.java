@@ -12,17 +12,20 @@ public class HashMapDuplicationExample {
         Map<Integer, Student> students = new HashMap<Integer, Student>();
         // Instantiate three Students; the constructor arguments are 
         // used to initialize Student attributes studentId and studentName
-        Student s1 = new Student(12345, "Fred");
-        Student s2 = new Student(98765, "Barney");
-        Student s3 = new Student(71024, "Wilma");
+        Student s1 = new Student(12, "Fred");
+        Student s2 = new Student(98, "Barney");
+        Student s3 = new Student(71, "Wilma");
 
         // Insert all three Students into the HashMap.
         students.put(s1.getStudentID(), s1);
         students.put(s2.getStudentID(), s2);
         students.put(s3.getStudentID(), s3);
         
-        Student s4 = new Student(98765, "New Barney");//override the previous value
+        System.out.println("After adding 3 students, Map size is:" + students.size() );
+        
+        Student s4 = new Student(98, "New Barney");//override the previous value
         Student previous = students.put(s4.getStudentID(), s4);
+        System.out.println("After adding Student 4 - Map size is still:" + students.size() );
        
         System.out.println("\nIterate through the HashMap to process all Entries (Id, Student):");
         for (Map.Entry<Integer,Student> entry : students.entrySet()) {
@@ -39,10 +42,10 @@ public class HashMapDuplicationExample {
         }
         
         Student nullStudent =  students.get(null);
-        System.out.println("\nThis is the NULL student: " + nullStudent);
+        System.out.println("\nWe can use null as a key. This is the NULL student: " + nullStudent);
         
         //it is possible to set a value to null as well
-        students.put(888, null);
+        students.put(88, null);
         
         System.out.println("\nIterate through the HashMap to process all Entries (Id, Student):");
         for (Map.Entry<Integer,Student> entry : students.entrySet()) {
