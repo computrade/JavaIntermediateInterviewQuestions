@@ -26,7 +26,7 @@ public class TreeMapExample {
             
             System.out.println("Iterate through the TreeMap to process all Entries (Id, Student):");
             for (Map.Entry<Integer,Student> entry : students.entrySet()) {
-                System.out.println("ID: " + entry.getKey() +  " Strudent: " + entry.getValue() );
+                System.out.println("ID: " + entry.getKey() +  " Student: " + entry.getValue() );
             }
             
             System.out.println("***Note: The map is sorted according to the natural ordering of its keys!");

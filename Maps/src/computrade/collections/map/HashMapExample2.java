@@ -32,7 +32,7 @@ public class HashMapExample2 {
        
         System.out.println("\nIterate through the HashMap to process all Entries (Id, Student):");
         for (Map.Entry<Integer,Student> entry : students.entrySet()) {
-            System.out.println("ID: " + entry.getKey() +  " Strudent: " + entry.getValue() );
+            System.out.println("ID: " + entry.getKey() +  " Student: " + entry.getValue() );
         }
         
         //adding null 
@@ -41,7 +41,7 @@ public class HashMapExample2 {
         System.out.println("\nAfter adding null key - Map size is:" + students.size() );
         System.out.println("Iterate through the HashMap to process all Entries (Id, Student):");
         for (Map.Entry<Integer,Student> entry : students.entrySet()) {
-            System.out.println("ID: " + entry.getKey() +  " Strudent: " + entry.getValue() );
+            System.out.println("ID: " + entry.getKey() +  " Student: " + entry.getValue() );
         }
         
         Student nullStudent =  students.get(null);
@@ -52,7 +52,7 @@ public class HashMapExample2 {
         System.out.println("\nAfter adding null value - Map size is:" + students.size() );
         System.out.println("Iterate through the HashMap to process all Entries (Id, Student):");
         for (Map.Entry<Integer,Student> entry : students.entrySet()) {
-            System.out.println("ID: " + entry.getKey() +  " Strudent: " + entry.getValue() );
+            System.out.println("ID: " + entry.getKey() +  " Student: " + entry.getValue() );
         }
         
     }

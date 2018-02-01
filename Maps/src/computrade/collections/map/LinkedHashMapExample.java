@@ -26,7 +26,7 @@ public class LinkedHashMapExample {
           
             System.out.println("\nIterate through the LinkedHashMap to process all Entries (Id, Student):");
             for (Map.Entry<Integer,Student> entry : students.entrySet()) {
-                System.out.println("ID: " + entry.getKey() +  " Strudent: " + entry.getValue() );
+                System.out.println("ID: " + entry.getKey() +  " Student: " + entry.getValue() );
             }   
             
         }

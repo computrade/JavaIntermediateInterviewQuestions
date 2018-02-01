@@ -21,7 +21,7 @@ public class HashTableExample {
         
         System.out.println("\nIterate through the HashMap to process all Entries (Id, Student):");
         for (Map.Entry<Integer,Student> entry : students.entrySet()) {
-            System.out.println("ID: " + entry.getKey() +  " Strudent: " + entry.getValue() );
+            System.out.println("ID: " + entry.getKey() +  " Student: " + entry.getValue() );
         }
         
         //Hashtable doesn't allow put/get of null as key 
