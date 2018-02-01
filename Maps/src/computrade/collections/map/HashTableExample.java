@@ -30,8 +30,6 @@ public class HashTableExample {
         
         //Hashtable doesn't allow putting null as value 
         students.put(88, null);
-       
-        
-        
+          
     }
 }
