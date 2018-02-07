@@ -20,9 +20,11 @@ public class ListIteratorDemo {
 	  System.out.println("**** List Iterator Example...");
 	  ListIterator<Student> studentListIterator = students.listIterator();
 	  while(studentListIterator.hasNext()){	  
-		  Student currStudent = studentListIterator.next();
-		  studentListIterator.add(new Student(4,"David"));
-		  System.out.println(currStudent);
+		  System.out.println(studentListIterator.next());
+		  //use ListeIterator to find position.
+		  if(studentListIterator.nextIndex()==3){
+			  studentListIterator.add(new Student(4,"David"));
+		  }
 	  }
 	  
 	  System.out.println("**** List Iterator Previous Example...");
